@@ -1,0 +1,122 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="img/logo.png">
+    <title>Checkout - ePLDT</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <a href="index.html"><div class="navbar__logo">ePLDT</div></a>
+      <ul class="navbar__links">
+        <li><a href="index.html#features" class="navbar__link">Features</a></li>
+        <li><a href="index.html#stats" class="navbar__link">Stats</a></li>
+        <li><a href="index.html#pricing" class="navbar__link">Pricing</a></li>
+        <li><a href="about.html" class="navbar__link">About</a></li>
+        <li><a href="contact.html" class="navbar__link">Contact</a></li>
+      </ul>
+      <div id="navUser"></div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero fade-in">
+      <h1 class="hero__title">Checkout</h1>
+      <p class="hero__subtitle">
+        Complete your subscription securely. Review your plan and payment
+        details below.
+      </p>
+    </section>
+
+    <!-- Checkout Form -->
+    <section class="fade-in">
+      <div class="checkout-container">
+        <!-- Plan Summary -->
+        <div class="plan-summary">
+          <h3 class="section__title">Selected Plan</h3>
+          <p id="planName">Plan: <strong>Standard</strong></p>
+          <p id="planPrice">Price: <strong>€19.99</strong></p>
+        </div>
+
+        <!-- Payment Method -->
+        <h3 class="section__title">Payment Method</h3>
+        <select id="paymentMethod" class="payment-select">
+          <option value="paypal">PayPal</option>
+          <option value="creditcard">Credit Card</option>
+          <option value="slovenska">Slovenská Bank Transfer</option>
+        </select>
+
+        <!-- PayPal Form -->
+        <form id="paypalForm" class="payment-form active">
+          <p>You'll be redirected to PayPal to complete your payment.</p>
+          <button class="hero__button">Pay with PayPal</button>
+        </form>
+
+        <!-- Credit Card Form -->
+        <form id="creditForm" class="payment-form">
+          <input type="text" placeholder="Cardholder Name" required />
+          <input type="text" placeholder="Card Number" required />
+
+          <!-- Expiration -->
+          <input type="text" placeholder="MM/YY" required />
+
+          <!-- CVC -->
+          <input type="text" placeholder="CVC" required />
+
+          <input type="text" placeholder="Billing Address" required />
+          <input type="text" placeholder="City / Postal Code" required />
+          <button class="hero__button">Pay with Credit Card</button>
+        </form>
+
+        <!-- Slovenská Form -->
+        <form id="slovenskaForm" class="payment-form">
+          <input type="text" placeholder="Full Name" required />
+          <input type="text" placeholder="IBAN" required />
+          <input type="text" placeholder="Bank Name" required />
+          <button class="hero__button">Pay via Bank Transfer</button>
+        </form>
+      </div>
+    </section>
+
+    <footer class="footer fade-in">
+      <div class="footer__section">
+        <h3 class="footer__title">Quick Links</h3>
+        <ul class="footer__links">
+          <li><a href="index.html#features">Features</a></li>
+          <li><a href="index.html#stats">Stats</a></li>
+          <li><a href="index.html#pricing">Pricing</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer__section">
+        <h3 class="footer__title">FAQs</h3>
+        <ul class="footer__faqs">
+          <li><a href="faqs.html">How do I subscribe?</a></li>
+          <li><a href="faqs.html">Payment methods?</a></li>
+          <li><a href="faqs.html">Cancel anytime?</a></li>
+        </ul>
+      </div>
+      <div class="footer__section">
+        <h3 class="footer__title">Contact</h3>
+        <ul class="footer__contact">
+          <li>Email: support@epldt.com</li>
+          <li>Phone: +123 456 7890</li>
+          <li>Address: 123 Cyber St, Internet City</li>
+        </ul>
+      </div>
+      <div class="footer__copyright">
+        &copy; 2026 ePLDT. All rights reserved.
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+  </body>
+</html>

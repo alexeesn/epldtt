@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="icon" type="image/png" href="img/logo.png">
+  <title>ePLDT</title>
+  <link rel="icon" type="image/png" href="img/logo.png">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navbar -->
+ <nav class="navbar">
+  <a href="index.html"><div class="navbar__logo">ePLDT</div></a>
+
+  <ul class="navbar__links">
+    <li><a href="#features" class="navbar__link">Features</a></li>
+    <li><a href="#stats" class="navbar__link">Stats</a></li>
+    <li><a href="#pricing" class="navbar__link">Pricing</a></li>
+    <li><a href="about.html" class="navbar__link">About</a></li>
+    <li><a href="contact.html" class="navbar__link">Contact</a></li>
+  </ul>
+
+  <div id="navUser"></div>
+</nav>
+
+  <!-- Hero -->
+  <section class="hero fade-in">
+    <h1 class="hero__title">Protect Your Digital World</h1>
+    <p class="hero__subtitle">Fast, secure, and reliable VPN, Antivirus, and Firewall solutions.</p>
+    <div class="hero__icon">🔐</div>
+    <a href="#pricing" class="hero__button">View Plan</a>
+  </section>
+
+  <!-- Features -->
+  <section id="features" class="fade-in">
+    <h2 class="section__title">Features</h2>
+    <div class="features__grid">
+      <div class="feature-card">
+        <div class="feature-card__icon">🛡️</div>
+        <h3 class="feature-card__title">VPN</h3>
+        <p class="feature-card__desc">Protect your connection and browse safely anywhere in the world.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-card__icon">🛡️</div>
+        <h3 class="feature-card__title">Antivirus</h3>
+        <p class="feature-card__desc">Advanced antivirus engine keeps malware and viruses away.</p>
+      </div>
+      <div class="feature-card">
+        <div class="feature-card__icon">🔥</div>
+        <h3 class="feature-card__title">Firewall</h3>
+        <p class="feature-card__desc">Smart firewall protects against unauthorized access and threats.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Stats -->
+  <section id="stats" class="fade-in">
+    <h2 class="section__title">Stats</h2>
+    <div class="stats__grid">
+      <div class="stat-card">
+        <div class="stat-card__number">99%</div>
+        <div class="stat-card__label">Customer Satisfaction</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-card__number">1M+</div>
+        <div class="stat-card__label">Secure Connections</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-card__number">24/7</div>
+        <div class="stat-card__label">Support</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Pricing -->
+  <section id="pricing" class="fade-in">
+    <h2 class="section__title">Pricing</h2>
+    <div class="pricing__grid">
+      <div class="pricing-card">
+        <h3 class="pricing-card__title">Basic</h3>
+        <div class="pricing-card__price">€5/mo</div>
+        <ul class="pricing-card__features">
+          <li>VPN Access</li>
+          <li>Basic Firewall</li>
+          <li>Email Support</li>
+        </ul>
+        <a href="checkout.html" class="pricing-card__button" data-plan="Basic">Subscribe</a>
+      </div>
+      <div class="pricing-card">
+        <h3 class="pricing-card__title">Standard</h3>
+        <div class="pricing-card__price">€10/mo</div>
+        <ul class="pricing-card__features">
+          <li>VPN + Antivirus</li>
+          <li>Enhanced Firewall</li>
+          <li>Priority Email Support</li>
+        </ul>
+        <a href="checkout.html" class="pricing-card__button" data-plan="Standard">Subscribe</a>
+      </div>
+      <div class="pricing-card">
+        <h3 class="pricing-card__title">Premium</h3>
+        <div class="pricing-card__price">€20/mo</div>
+        <ul class="pricing-card__features">
+          <li>Full Security Suite</li>
+          <li>Advanced Firewall</li>
+          <li>24/7 Support</li>
+        </ul>
+        <a href="checkout.html" class="pricing-card__button" data-plan="Premium">Subscribe</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer fade-in">
+    <div class="footer__section">
+      <h3 class="footer__title">Quick Links</h3>
+      <ul class="footer__links">
+        <li><a href="#features">Features</a></li>
+        <li><a href="#stats">Stats</a></li>
+        <li><a href="#pricing">Pricing</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+    <div class="footer__section">
+      <h3 class="footer__title">FAQs</h3>
+      <ul class="footer__faqs">
+        <li><a href="faqs.html">How do I subscribe?</a></li>
+        <li><a href="faqs.html">Payment methods?</a></li>
+        <li><a href="faqs.html">Cancel anytime?</a></li>
+      </ul>
+    </div>
+    <div class="footer__section">
+      <h3 class="footer__title">Contact</h3>
+      <ul class="footer__contact">
+        <li>Email: support@epldt.com</li>
+        <li>Phone: +123 456 7890</li>
+        <li>Address: 123 Cyber St, Internet City</li>
+      </ul>
+    </div>
+    <div class="footer__copyright">
+      &copy; 2026 ePLDT. All rights reserved.
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="img/logo.png">
+    <title>Receipt - ePLDT</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navbar -->
+    <nav class="navbar">
+      <a href="index.html"><div class="navbar__logo">ePLDT</div></a>
+      <ul class="navbar__links">
+        <li><a href="index.html#features" class="navbar__link">Features</a></li>
+        <li><a href="index.html#stats" class="navbar__link">Stats</a></li>
+        <li><a href="index.html#pricing" class="navbar__link">Pricing</a></li>
+        <li><a href="about.html" class="navbar__link">About</a></li>
+        <li><a href="contact.html" class="navbar__link">Contact</a></li>
+      </ul>
+      <div id="navUser"></div>
+    </nav>
+
+    <!-- Hero -->
+    <section class="hero fade-in">
+      <h1 class="hero__title">Receipt</h1>
+      <p class="hero__subtitle">
+        Thank you for your purchase! Here’s your order summary.
+      </p>
+    </section>
+
+    <!-- Receipt Container -->
+    <section class="fade-in" id="receiptPage">
+      <div class="checkout-container">
+        <h3 class="section__title">Order Details</h3>
+
+        <div class="receipt-card">
+          <p>
+            <strong>Transaction ID:</strong>
+            <span id="txnId">#EP123456789</span>
+          </p>
+          <p><strong>Plan:</strong> <span id="planName">Standard</span></p>
+          <p><strong>Price:</strong> <span id="planPrice">€19.99</span></p>
+          <p>
+            <strong>Payment Method:</strong>
+            <span id="paymentMethod">Credit Card</span>
+          </p>
+
+          <div id="billingInfo">
+            <p><strong>Cardholder Name:</strong> John Doe</p>
+            <p><strong>Billing Address:</strong> 123 Main St, Bratislava</p>
+          </div>
+        </div>
+
+        <a href="index.html"><button class="hero__button">Home</button></a>
+      </div>
+    </section>
+
+    <footer class="footer fade-in">
+      <div class="footer__section">
+        <h3 class="footer__title">Quick Links</h3>
+        <ul class="footer__links">
+          <li><a href="index.html#features">Features</a></li>
+          <li><a href="index.html#stats">Stats</a></li>
+          <li><a href="index.html#pricing">Pricing</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer__section">
+        <h3 class="footer__title">FAQs</h3>
+        <ul class="footer__faqs">
+          <li><a href="faqs.html">How do I subscribe?</a></li>
+          <li><a href="faqs.html">Payment methods?</a></li>
+          <li><a href="faqs.html">Cancel anytime?</a></li>
+        </ul>
+      </div>
+      <div class="footer__section">
+        <h3 class="footer__title">Contact</h3>
+        <ul class="footer__contact">
+          <li>Email: support@epldt.com</li>
+          <li>Phone: +123 456 7890</li>
+          <li>Address: 123 Cyber St, Internet City</li>
+        </ul>
+      </div>
+      <div class="footer__copyright">
+        &copy; 2026 ePLDT. All rights reserved.
+      </div>
+    </footer>
+
+    <script src="script.js"></script>
+
+  </body>
+</html>
